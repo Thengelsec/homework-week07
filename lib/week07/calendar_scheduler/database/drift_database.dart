@@ -15,6 +15,8 @@ part 'drift_database.g.dart'; // part 파일 지정
   ],
 )
 class LocalDatabase extends _$LocalDatabase {
+  LocalDatabase() : super(_openConnection());
+  
   Stream<List<Schedule>> watchSchedules(DateTime date) =>
   // 데이터를 조회하고 변화 감지
     (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
