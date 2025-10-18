@@ -75,8 +75,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     itemBuilder: (context, index) {
                       // 현재 index에 해당되는 일정
                       final schedule = snapshot.data![index];
-                      
-                      return Padding( // 좌우로 패딩을 추가해서 UI 개선
+
+                      return 
+                      child: Padding( // 좌우로 패딩을 추가해서 UI 개선
                           padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                           child: ScheduleCard(   // 구현해둔 일정 카드
                             startTime: schedule.startTime,
