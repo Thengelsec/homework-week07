@@ -18,7 +18,6 @@ class ScheduleBottomSheet extends StatefulWidget {
   State<ScheduleBottomSheet> createState() => _ScheduleBottomSheetState();
 }
 
-// _ScheduelBottomSheetState의 onSavePressed() 함수
 class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
   final GlobalKey<FormState> formKey = GlobalKey();   // 폼 key 생성
 
