@@ -3,7 +3,7 @@ import 'package:myapp/week07/calendar_scheduler/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
-  final DataTime selectedDate;    // 선택된 날짜 상위 위젯에서 입력받기
+  final DateTime selectedDate;    // 선택된 날짜 상위 위젯에서 입력받기
 
   const ScheduleBottomSheet({
     required this.selectedDate,
