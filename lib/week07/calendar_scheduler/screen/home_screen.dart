@@ -55,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onDaySelected: onDaySelected,
             ),
             SizedBox(height: 8.0),
+            
             TodayBanner(  // 배너 추가하기
               selectedDate: selectedDate,
               count: 0,
