@@ -119,7 +119,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
   }     // 시간값 검증
 
   // 미리 정의해둔 함수
-  String? contentValidator(String? val) {
-    
+  String? contentValidator(String? val) { // 내용 검증 함수
+    if(val == null || val.length == 0){
+      return '값을 입력해주세요';
+    }
+
+    return null;
   }  // 내용값 검증
 }
